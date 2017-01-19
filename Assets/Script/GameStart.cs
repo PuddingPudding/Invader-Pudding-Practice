@@ -20,7 +20,7 @@ public class GameStart : MonoBehaviour
 
     public void GameStarting()
     {
-        SceneManager.LoadScene(1, LoadSceneMode.Single);
+        SceneManager.LoadScene("8.10 TRY" , LoadSceneMode.Single);
     }
 
 }
