@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class MetaData : MonoBehaviour {
 
@@ -8,6 +9,7 @@ public class MetaData : MonoBehaviour {
     public float Speed = 2;//速度預設為2
     public int team = 0;
     public GameObject HealthBar;
+    public Text HealthNum;
 
     // Use this for initialization
     void Start () {
@@ -32,6 +34,7 @@ public class MetaData : MonoBehaviour {
                 Destroy(gameObject);
             }
             HealthBar.GetComponent<HPBar>().HP = HP;
+            
         }
     }
 }
